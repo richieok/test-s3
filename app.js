@@ -9,8 +9,9 @@ async function run(){
         Key: 'my_script.txt'
     })
     const response = await s3Client.send(command)
-    console.log(response)
-
+    // console.log(response)
+    const content = response.Body.transformToString()
+    console.log(content);
 }
 
 run()
