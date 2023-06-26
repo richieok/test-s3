@@ -10,7 +10,7 @@ async function run(){
     })
     const response = await s3Client.send(command)
     // console.log(response)
-    const content = response.Body.transformToString()
+    const content = await response.Body.transformToString()
     console.log(content);
 }
 
