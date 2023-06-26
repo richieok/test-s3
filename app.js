@@ -12,3 +12,5 @@ async function run(){
     console.log(response)
 
 }
+
+run()
